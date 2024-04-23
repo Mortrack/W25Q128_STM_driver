@@ -525,6 +525,10 @@
  *
  * @author 	Cesar Miranda Meza (cmirandameza3@hotmail.com)
  * @date	April 23, 2024.
+ *
+ * @note    Credits are given to <a href=https://www.youtube.com/@ControllersTech>ControllersTech</a> for their
+ *          contributions on their version of the W25Q Flash Memory Devices Driver Library, from which the author of
+ *          the @ref w25q128fv started to learn about the W25Q Series Devices.
  */
 
 #ifndef W25Q128FV_DRIVER_H

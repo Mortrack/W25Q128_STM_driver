@@ -18,4 +18,4 @@ W25Q128FV Flash Memory Driver module at the provided offline documentation.
 
 Last but not least, the configurations and details of the microcontroller used for testing and validating this library
 can be reviewed at the
-<a href=#>STM32CubeMX_configurations_report.pdf</a>.
+<a href=https://github.com/Mortrack/W25Q128_STM_driver/blob/main/documentation/pdfs/STM32CubeMX_configurations_report.pdf>STM32CubeMX_configurations_report.pdf</a>.
