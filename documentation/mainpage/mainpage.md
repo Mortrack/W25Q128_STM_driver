@@ -18,4 +18,32 @@ W25Q128FV Flash Memory Driver module at the provided offline documentation.
 
 Last but not least, the configurations and details of the microcontroller used for testing and validating this library
 can be reviewed at the
-<a href=https://github.com/Mortrack/W25Q128_STM_driver/blob/main/documentation/pdfs/STM32CubeMX_configurations_report.pdf>STM32CubeMX_configurations_report.pdf</a>.
+<a href=https://github.com/Mortrack/W25Q128_STM_driver/blob/main/documentation/pdfs/STM32CubeMX_configurations_report.pdf>STM32CubeMX_configurations_report.pdf</a>
+, where it is important to highlight that the UART1 was used for the printf() function of the stdio.h library.
+
+<i><b><u>NOTE:</u></b> To be able to link the printf() function to the UART1 as it was done during the testings and
+validations made for this library, make sure to copy-paste/implement the following code into your main.c file:</i>
+
+```c
+/*@brief	Compiler definition to be able to use the @ref printf function from stdio.h library in order to print
+ *          characters via the UART1 Peripheral but by using that @ref printf function.
+ *
+ * @return	The \p ch param.
+ *
+ * author	César Miranda Meza
+ * @date	July 07, 2023
+ */
+#ifdef __GNUC__
+/* With GCC, small printf (option LD Linker->Libraries->Small printf set to 'Yes') calls __io_putchar(). */
+int __io_putchar(int ch)
+#else
+int fputc(int ch, FILE *f)
+#endif /* __GNUC__ */
+{
+/* Place your implementation of fputc here. */
+/* NOTE: The characters written into the UART1 Protocol will be looped until the end of transmission. */
+HAL_UART_Transmit(&huart1, (uint8_t *) &ch, 1, HAL_MAX_DELAY);
+return ch;
+}
+```
+
