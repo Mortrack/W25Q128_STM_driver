@@ -18,6 +18,12 @@
  *          STM32CubeMX app) to read, write and erase data from/to the W25Q128FV Flash Memory Device. Also, this
  *          initialization function is where the implementer will also tell what Output GPIO Pin is connected to the CS
  *          Pin of the W25Q128FV Device.
+ * 
+ * @note    It is also important to highlight is that this @ref w25q128fv has included the "stm32f1xx_hal.h" header file
+ *          to be able to use the SPI in this module. However, this header file is specifically meant for the STM32F1
+ *          series devices. If yours is from a different type, then you will have to substitute the right one here for
+ *          your particular STMicroelectronics device. However, if you cant figure out what the name of that header file
+ *          is, then simply substitute that line of code from this @ref w25q128fv by: #include "main.h"
  *
  * @details <b><u>Code used for validating the @ref w25q128fv , but that can also be used as a reference as an
  *          example code for using this Driver Library:</u></b>
