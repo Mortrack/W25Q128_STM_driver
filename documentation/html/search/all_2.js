@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['init_5fw25q128fv_5fmodule_3',['init_w25q128fv_module',['../db/dc9/group__w25q128fv.html#ga3917858d3b2cca79e0f42d68249908a5',1,'init_w25q128fv_module(SPI_HandleTypeDef *hspi, W25Q128FV_peripherals_def_t *peripherals):&#160;w25q128fv_driver.c'],['../db/dc9/group__w25q128fv.html#ga3917858d3b2cca79e0f42d68249908a5',1,'init_w25q128fv_module(SPI_HandleTypeDef *hspi, W25Q128FV_peripherals_def_t *peripherals):&#160;w25q128fv_driver.c']]]
+  ['flash_20memory_20driver_20module_20c_20stmicroelectronics_20driver_20library_20documentation_0',['W25Q128FV Flash Memory Driver module C STMicroelectronics driver library documentation',['../index.html',1,'']]],
+  ['flash_20memory_20module_1',['W25Q128FV Flash Memory module',['../db/dc9/group__w25q128fv.html',1,'']]]
 ];
