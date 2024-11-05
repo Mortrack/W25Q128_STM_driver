@@ -1,6 +1,6 @@
 # W25Q128FV Flash Memory C STMicroelectronics driver library
 
-Version: 1.0.2.0
+Version: 1.0.2.1
 
 This library provides the definitions, variables and functions necessary so that its implementer can use and communicate
 with a W25Q128FV Flash Memory Device from a microcontroller/microprocessor of the STMicroelectronics device 
