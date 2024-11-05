@@ -576,7 +576,7 @@ typedef struct __attribute__ ((__packed__)) {
  *          which the terminals of the W25Q128FV Flash Memory Device are connected to.
  */
 typedef struct __attribute__ ((__packed__)) {
-    W25Q128FV_GPIO_def_t CS;	//!< Type Definition of the GPIO peripheral port to which the A terminal of the 5641AS 7-segment Display device is connected to.
+    W25Q128FV_GPIO_def_t CS;	//!< Type Definition of the GPIO peripheral port to which the CS terminal of the W25Q128FV device is connected to.
 } W25Q128FV_peripherals_def_t;
 
 /**@brief   Sends a Software Reset request to the W25Q128FV Flash Memory Device.
